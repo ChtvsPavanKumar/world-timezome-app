@@ -30,8 +30,13 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-				<cloudHubDeployment>
+				</plugin>
+				<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+		        <configuration>
+			<cloudHubDeployment>
 				<username>tvspa1kumar</username>
 				<password>Kum@r1</password>
 				<environment>Sandbox</environment>
@@ -40,8 +45,17 @@
 				<uri>https://anypoint.mulesoft.com</uri>
 				<applicationName>worldtimezone-service</applicationName>
 				<muleVersion>${app.runtime}</muleVersion>
-				</cloudHubDeployment>
-				</configuration>
+			</cloudHubDeployment>
+		</configuration>
+		<executions>
+		<execution>
+		<id>deploy</id>
+		<phase>deploy</phase>
+		<goals>
+		<goal>deploy</goal>
+		</goals>
+		</execution>
+		</executions>
 			</plugin>
 		</plugins>
 	</build>
