@@ -34,12 +34,12 @@
 			<cloudHubDeployment>
 			    <uri>https://anypoint.mulesoft.com</uri>
 			    <muleVersion>${app.runtime}</muleVersion>
-				<username>${tvspa1kumar}</username>
-				<password>${Kum@r1}</password>
-				<environment>${Sandbox}</environment>
-				<workers>${1}</workers>
-				<workerType>${Micro}</workerType>
-				<applicationName>${worldtimezone-service}</applicationName>
+				<username>tvspa1kumar</username>
+				<password>Kum@r1</password>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>worldtimezone-service</applicationName>
 			</cloudHubDeployment>
 		</configuration>
 		</plugin>
